@@ -57,7 +57,7 @@
 
 /* Uncomment this next block for dark mode. Do not remove this line. */
 
-/* html[data-theme="dark"] {
+html[data-theme="dark"] {
 	@theme {
 		--color-background: var(--color-gray-950);
 		--color-foreground: var(--color-gray-50);
@@ -67,7 +67,7 @@
 		--color-popover: var(--color-gray-900);
 		--color-popover-foreground: var(--color-gray-50);
 		--color-primary: var(--color-primary-600);
-		--color-primary-foreground: var(--color-primary-50);
+		--color-primary-foreground: var(--color-gray-950);
 		--color-secondary: var(--color-gray-900);
 		--color-secondary-foreground: var(--color-gray-50);
 		--color-muted: var(--color-gray-900);
@@ -86,10 +86,10 @@
 		--color-sidebar: var(--color-gray-900);
 		--color-sidebar-foreground: var(--color-gray-50);
 		--color-sidebar-primary: var(--color-primary-600);
-		--color-sidebar-primary-foreground: var(--color-primary-50);
+		--color-sidebar-primary-foreground: var(--color-gray-950);
 		--color-sidebar-accent: var(--color-gray-900);
 		--color-sidebar-accent-foreground: var(--color-gray-50);
 		--color-sidebar-border: color-mix(in oklch, var(--color-gray-50), transparent 90%);
 		--color-sidebar-ring: var(--color-primary-600);
 	}
-} */
+}

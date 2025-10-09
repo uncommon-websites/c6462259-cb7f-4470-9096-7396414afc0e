@@ -7,6 +7,14 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+
+	// Icons
+	import IconMessageSquare from "~icons/lucide/message-square";
+	import IconZap from "~icons/lucide/zap";
+	import IconShieldCheck from "~icons/lucide/shield-check";
+	import IconUserPlus from "~icons/lucide/user-plus";
+	import IconNetwork from "~icons/lucide/network";
+	import IconTrendingUp from "~icons/lucide/trending-up";
 </script>
 
 <Hero
@@ -36,62 +44,97 @@
 />
 
 <Summary
-	generating
 	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	text="Expertlift AI solves the critical problem of knowledge loss when employees leave by capturing expertise through natural conversation during daily work. We serve HR directors and operations leaders at mid-sized manufacturing and professional services firms who need to onboard faster and retain institutional knowledge. Our platform delivers structured answers across teams without requiring manual documentation, addressing the skilled worker shortage that threatens operational continuity."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Kristina Bergmann",
+			position: "HR Director",
+			company: "Schäfer Werkzeugbau",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Expertlift reduced our onboarding time from 6 weeks to just 10 days. New hires now access 20 years of machining expertise instantly, and we've eliminated the panic when senior staff take vacation.",
+			image: "/generated/image-confident-german-female-hr-director-with.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Matthias Keller",
+			position: "COO",
+			company: "Hoffmann Maschinenbau",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"We saved over €120,000 in the first year by preventing costly mistakes. When our lead engineer retired, his expertise stayed with us instead of walking out the door.",
+			image: "/generated/image-german-male-coo-with-strong-executive-pr.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Sabine Richter",
+			position: "Operations Manager",
+			company: "Fischer Präzisionstechnik",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Knowledge capture happens naturally during daily work, no extra documentation required. Our team actually uses it because the AI delivers answers in under 3 seconds, exactly when they need them.",
+			image: "/generated/image-approachable-german-female-operations-ma.webp"
 		}
 	]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="Capture, access, and scale expert knowledge"
+	subtitle="Built for teams that can't afford to lose critical expertise when employees leave"
 	features={[
 		{
-			title: "Streamlined Workflows",
+			title: "Capture expertise without disruption",
 			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+				"Extract knowledge through natural conversations during daily work instead of requiring manual documentation that employees never complete.",
+			icon: IconMessageSquare
 		},
 		{
-			title: "Data Analysis",
+			title: "Instant access to structured answers",
 			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+				"Transform scattered expertise into organized, searchable responses that teams can find in seconds, not hours.",
+			icon: IconZap
 		},
 		{
-			title: "Secure Collaboration",
+			title: "Retain knowledge when employees leave",
 			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+				"Preserve critical institutional knowledge before experts retire or transition, eliminating the costly knowledge gaps that cripple operations.",
+			icon: IconShieldCheck
+		},
+		{
+			title: "Onboard new employees faster",
+			description:
+				"Reduce training time by giving new hires immediate access to expert knowledge and best practices without overwhelming senior staff.",
+			icon: IconUserPlus
+		},
+		{
+			title: "Connect expertise across teams",
+			description:
+				"Break down silos by making expert knowledge accessible to every department, ensuring consistency and quality throughout the organization.",
+			icon: IconNetwork
+		},
+		{
+			title: "Scale knowledge operations efficiently",
+			description:
+				"Grow from 100 to 500,000 employee seats without exponentially increasing training costs or knowledge management overhead.",
+			icon: IconTrendingUp
 		}
 	]}
 />
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction
+	title="Stop losing expertise when employees walk out the door"
+	subtitle="Start capturing knowledge today"
+	description="Your senior experts hold decades of critical knowledge. Every retirement, resignation, or transition puts your operations at risk. Expertlift captures this expertise through natural conversation during daily work, so institutional knowledge stays with your company, not with individuals. Join mid-sized firms who've reduced onboarding time by 75% and eliminated costly knowledge gaps."
+	imageSrc="/generated/image-a-professional-hr-director-well-dressed-.webp"
+	callsToAction={[
+		{
+			href: "/contact",
+			label: "Schedule a demo",
+			variant: "primary"
+		},
+		{
+			href: "/about",
+			label: "See how it works",
+			variant: "secondary"
+		}
+	]}
+/>
