@@ -10,12 +10,30 @@
 </script>
 
 <Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+	centered={false}
+	title="Transform scattered expertise into instant answers"
+	subtitle="Capture knowledge directly from your experts and deliver structured responses across teams, without disrupting daily operations."
+	imageSrc="/generated/image-a-professional-hr-director-dressed-in-bu.webp"
+	callsToAction={[
+		{
+			href: "/contact",
+			label: "Get started"
+		},
+		{
+			href: "/about",
+			label: "Learn more"
+		}
+	]}
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://cdn.brandfetch.io/siemens.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/sap.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/bosch.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/mercedes-benz.com/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
 	generating
